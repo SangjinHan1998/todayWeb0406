@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name = "viewport" content = "width=device-width, initial-scale=1.0" />
+        <meta http-eqiv = "X-UA-Compatible" content = "ie=edge" />
+        <link rel = "stylesheet" href = "home1.css">
+        <title>Repeat Homepage 1</title>
+
+
+    </head>
+    <body>
+        <center>
+           
+        <form>
+            <header>
+                <input type = "checkbox" id = "side_btn" class = "side_input" />
+                <label for = "side_btn" class = "side_toggle_btn"></label>
+                <div class = "side_list">
+                    <a href = "#" class = "side_link">menu1</a>
+                    <a href = "#" class = "side_link">menu2</a>
+                    <a href = "#" class = "side_link">menu3</a>
+                    <a href = "#" class = "side_link">menu4</a>
+                    <a href = "#" class = "side_link">menu5</a>
+
+                </div>
+            </header>
+            <div>
+            <label for ="profile">Profile Photo</label>
+            <input id = "profile" type = "file" accept = ".png"/>
+            <!--label for 와 input id 에 들어가는 값은 같아야만 한다. -->
+            </div>
+            <br><br>
+
+            <div>
+            <label for = "website">Web Site</label>
+            <input id = "website" required placeholder = "web" type = "url"/>
+            <input type ="submit" value = "Create Account"/>
+            <br><br>
+            </div>
+            <!-- type에 유형을 기록하면서 원하는 값 원하지 않는 값 구별해서 받을 수 있다. -->
+
+            <label for = "email">Email</label>
+            <input id = "email" required placeholder = "email" type = "email"/>           
+            <input type ="submit" value = "Create Account"/>
+            <br><br><br><br>
+
+            <label for = "date">Date</label>
+            <input id = "date" required placeholder = "date" type = "date"/>
+            <input type ="submit" value = "Create Account"/>
+            <br><br><br><br>
+            <p>id 는 Unique Identifier(고유식별자) 이기 때문에 body 어디에서도 넣을 수 있다. </p>
+            <br><br>
+            <p>id 는 element 당 하나의 id를 넣을 수 있다.  </p>
+
+            <div>div = division 박스 역할 semantic 태그로 코드 짜기</div>
+            <div>Search google -> html element mdn</div>
+            <a href = "https://developer.mozilla.org/ko/docs/Web/HTML/Element">html element mdn</a><br>
+            <div></div>
+        </form>
+        <footer>
+            &copy; 2022 Backend Job
+        </footer>
+        </center>
+        
+    </body>
+</html>

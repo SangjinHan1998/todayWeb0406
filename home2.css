@@ -1,0 +1,41 @@
+* {
+    border : 4px solid black; 
+    background-color:pink;
+} 
+
+/*  * 은 웹페이지 전체 의미한다. */ 
+
+
+body {
+    margin: 20px;
+    background-color: green;
+    padding: 20px;
+}
+
+div {
+    padding: 20px;
+}
+
+span {
+    border-style:dotted;
+    background-color: gray;
+}
+
+#first {
+    background-color: red;
+    height: 150px;
+    width: 150px;
+}
+
+#second {
+    background-color: skyblue;
+    height: 100px;
+    width: 100px;
+}
+
+#third {
+    background-color: purple;
+    height: 50px;
+    width: 50px;
+}
+
