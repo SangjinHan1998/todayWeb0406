@@ -1,0 +1,24 @@
+body {
+    height: 100vh; /*vh(vertical height)*/
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;  /*주축 위에서 움직임*/
+    align-items: center; /*교차축 위에서 움직임*/
+    flex-wrap: wrap-reverse;
+    flex-direction: row-reverse;
+}
+
+div {
+    display: flex;  /*지우면 효과 사라짐*/
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color: white;
+    width: 250px;
+    height: 250px;
+    background-color: gray;
+}
+
+#second {
+    background-color: #0A3711;
+}

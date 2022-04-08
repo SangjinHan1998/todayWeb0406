@@ -1,0 +1,28 @@
+body {
+    margin: 20px;
+}
+
+span {
+    background-color: gray;
+}
+
+.btn {
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-size: 35px;
+}
+
+.teal {
+    background-color: teal; 
+}
+
+.tomato
+ {
+    background: chocolate;
+    color: white;
+ }
+
+/*
+#tomato = id = "tomato"
+.tomato = class = "tomato"
+*/
