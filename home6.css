@@ -1,0 +1,148 @@
+:root {
+    --main-color :#d172ea;
+    --default-border: 1px solid var(--main-color);
+}
+
+
+body {
+    height: 1000vh;
+    margin: 50px;
+}
+
+span {
+    background-color: yellowgreen;
+    font-size: 30px;
+    margin: 0 10px;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+span:nth-child(2n){
+    background-color:skyblue;
+}
+
+p {
+    background-color: var(--main-color);
+}
+
+p span {
+    color: var(--main-color);
+}
+
+p ~ span {  /*형제관계*/
+    text-decoration:none;
+}
+
+a {
+    color: var(--main-color);
+    border: var(--default-border);
+}
+
+div > span{ /*부모관계*/
+    text-decoration: underline;
+}
+
+input {     /*데이터를 입력하는 칸 크기 조절 가능*/
+    border : 1px solid green;
+    height: 70px;
+}
+
+input:required {
+    border-color: tomato;
+}
+
+input[placeholder~="name"] {     /*name으로 끝나는 코드의 배경색을 pink 로 바꾼다. */
+    background-color: pink;
+}
+
+input::placeholder {
+    color:#ff3399
+}
+
+button.btn1     {   /*버튼의 크기 조절 가능 */
+    height: 70px;
+}
+
+button.btn2     {
+    height: 70px;
+}
+
+
+button.btn3     {
+    height: 70px;
+}
+
+
+button.btn1:active {     /*active : 버튼을 누르고 떼는 순간까지 */
+    background-color: black;
+    color:white;
+    width: 50px;
+}
+
+button.btn2:hover {      /*hover: 마우스 커서가 대상 위에 있을 때 변화 생김*/
+    background-color: chocolate;
+    color: white;
+}
+
+button.btn3:focus {      /*focus: 버튼을 누르고 떼는 순간까지 + 키보드로도 가능함*/
+    background-color: green;
+    color: red;
+  
+}
+
+a:visited { /*방문했던 링크 색깔 바뀜*/
+    color: var(--main-color);
+}
+
+a:hover {   /*마우스 올려두면 orange 색으로*/
+    color: orange;
+}
+
+a:focus {   /*클릭하면 cyan 색으로 */
+    color: cyan;
+}
+
+form.form0{ /*input들 중 하나가 focused 되면 form 의 모습을 바꾼다. */
+    border: 3px solid salmon;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    width: 200px;
+}
+
+form.form1{ /*input들 중 하나가 focused 되면 form 의 모습을 바꾼다. */
+    border: 3px solid #ffd400;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+form.form2{ /*input들 중 하나가 focused 되면 form 의 모습을 바꾼다. */
+    border: 3px solid pink;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    width: 200px;
+}
+
+form:focus-within   { /*focus-within 은 focused 인 자식을 가진 부모 엘리먼트의 상태*/
+    border-color: blue;
+}
+
+form:hover input:focus{
+    background-color:chocolate;
+}
+
+p::selection    {   /*마우스로 드래그하면 배경색 또는 글자색이 변함*/
+    background-color: yellowgreen;  
+    color : white;
+}
+
+p::first-letter {   
+    /*첫번째 글자 강조 효과 
+      자매품 - first-line 첫번째줄 효과 
+    */
+    color: brown;
+    background-color : #008000;
+    font-size: 50px;
+}
